@@ -6,8 +6,8 @@ let MyPass = "samrat0725";
 let StunTurnConfig = {
   config: {
     iceServers: [
-      { url: MyStunServer },
-      { url: MyTurnServer, credential: MyPass, userTurn: MyTurnServer },
+      { urls: MyStunServer },
+      { urls: MyTurnServer, credential: MyPass, username: MyTurnUser },
     ],
   },
 };
